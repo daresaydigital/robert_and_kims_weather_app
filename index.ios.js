@@ -7,6 +7,7 @@
 var React = require('react-native');
 var {
   AppRegistry,
+  StyleSheet,
   Text,
   View,
 } = React;
@@ -30,11 +31,19 @@ var robert_and_kims_weather_app = React.createClass({
     var { lat, lon } = this.state
 
     if(!lat && !lon) {
-      return <Text>PLEASE LET ME HAVE YOUR POSITION</Text>;
+      return <Text style={styles.loading}>PLEASE LET ME HAVE YOUR POSITION</Text>;
     } else {
       return <WeatherApp lat={lat} lon={lon} />;
     }
+  }
+});
 
+var styles = StyleSheet.create({
+  loading: {
+    padding: 100,
+    fontSize: 20,
+    color: 'red',
+    height: 200
   }
 });
 
