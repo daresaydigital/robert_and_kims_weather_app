@@ -22,6 +22,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		4B0F15FB1BB196B1000A548B /* SKYIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F15FA1BB196B1000A548B /* SKYIconView.m */; settings = {ASSET_TAGS = (); }; };
+		4B0F16091BB19760000A548B /* RCTSkyconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F16081BB19760000A548B /* RCTSkyconsManager.m */; settings = {ASSET_TAGS = (); }; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,10 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = robert_and_kims_weather_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = robert_and_kims_weather_app/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		4B0F15F91BB196B1000A548B /* SKYIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYIconView.h; sourceTree = "<group>"; };
+		4B0F15FA1BB196B1000A548B /* SKYIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYIconView.m; sourceTree = "<group>"; };
+		4B0F16071BB19760000A548B /* RCTSkyconsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTSkyconsManager.h; path = robert_and_kims_weather_app/RCTSkyconsManager.h; sourceTree = "<group>"; };
+		4B0F16081BB19760000A548B /* RCTSkyconsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTSkyconsManager.m; path = robert_and_kims_weather_app/RCTSkyconsManager.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,6 +239,7 @@
 		13B07FAE1A68108700A75B9A /* robert_and_kims_weather_app */ = {
 			isa = PBXGroup;
 			children = (
+				4B0F16061BB196BD000A548B /* skycons */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -250,6 +257,17 @@
 				146834041AC3E56700842450 /* libReact.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4B0F16061BB196BD000A548B /* skycons */ = {
+			isa = PBXGroup;
+			children = (
+				4B0F15F91BB196B1000A548B /* SKYIconView.h */,
+				4B0F15FA1BB196B1000A548B /* SKYIconView.m */,
+				4B0F16071BB19760000A548B /* RCTSkyconsManager.h */,
+				4B0F16081BB19760000A548B /* RCTSkyconsManager.m */,
+			);
+			name = skycons;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -526,6 +544,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0F16091BB19760000A548B /* RCTSkyconsManager.m in Sources */,
+				4B0F15FB1BB196B1000A548B /* SKYIconView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
