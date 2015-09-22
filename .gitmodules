@@ -1,0 +1,3 @@
+[submodule "android/libraries/Skycons"]
+	path = android/libraries/Skycons
+	url = https://github.com/torryharris/Skycons.git
