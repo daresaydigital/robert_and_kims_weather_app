@@ -13,15 +13,18 @@ var WeatherApp = React.createClass({
   },
 
   getWeather: function(lat, lon) {
+    const APIKEY = 'ca23cb84769769c7d5bd5b50be8105b5';
+
     this.setState( {hasLocation: true} ) ;
 
-    fetch('http://api.openweathermap.org/data/2.5/weather?units=metric&lat='+lat+'&lon='+lon)
+
+    fetch('https://api.forecast.io/forecast/'+APIKEY+'/'+lat+','+lon+'?si')
       .then((response) => response.text())
       .then((responseText) => {
         var res = JSON.parse(responseText);
-        var name = res.name;
-        var degrees = Math.round(res.main.temp);
-        var weather = res.weather[0].description;
+        var name = 'FAKE LOCATION';
+        var degrees = Math.round(res.currently.temperature);
+        var weather = res.currently.summary;
         this.setState({
           hasWeather: true,
           location: name,
