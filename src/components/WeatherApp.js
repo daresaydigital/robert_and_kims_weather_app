@@ -22,7 +22,6 @@ var WeatherApp = React.createClass({
         var name = res.name;
         var degrees = Math.round(res.main.temp);
         var weather = res.weather[0].description;
-        debugger;
         this.setState({
           hasWeather: true,
           location: name,
@@ -92,6 +91,12 @@ var styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     fontFamily: 'Helvetica Neue'
+  },
+  loading: {
+    padding: 100,
+    fontSize: 20,
+    color: 'red',
+    height: 200
   }
 });
 
